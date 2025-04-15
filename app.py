@@ -3,7 +3,7 @@ from zeep import Client
 
 app = Flask(__name__)
 
-# Cliente SOAP apuntando al WSDL de la API
+
 client = Client('https://www.dataaccess.com/webservicesserver/NumberConversion.wso?WSDL')
 
 @app.route('/', methods=['GET', 'POST'])
